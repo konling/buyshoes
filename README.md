@@ -45,3 +45,5 @@ make server
 # terminal 2
 make css
 ```# buyshoes
+
+http://konling.github.io/buyshoes/
