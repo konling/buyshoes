@@ -1,0 +1,37 @@
+@import "normalize.css";
+body, html {width: 100%; height: 100%;}
+
+body, div, span {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+  align-content: flex-start;
+  border: 0 solid black;
+  margin: 0;
+  padding: 0;
+}
+body {  font-family: "Avenir Next","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica,Arial, "Lucida Grande", sans-serif;font-weight: 100;}
+h1 {  font-size: 64px; font-weight: 100;  }
+h2 {  font-size: 48px;font-weight: 100; }
+p {  font-size: 24px; }
+a {  font-weight: 400;  color: #FFF; padding: 10px; }
+a:hover {  font-weight: 400;  color: #DADADA;  text-decoration: none; }
+
+.site{    flex-direction: row; width: 100%; height: 100%; }
+/*-  -*/
+.site__main{  flex-direction: row; background-color: rgba(255,0,255,0.3);   flex-grow: 70; align-self: stretch; flex-basis: 0;justify-content:center; }
+.site__left-sidebar{position: fixed; flex-grow: 10; flex-basis:0; }
+.site__content{background-color: rgba(100,255,0,0.3);  flex-grow: 10;flex-basis: 0;margin-left: 170px; }
+.site__right-sidebar{ background-color: rgba(255,255,0,0.3);  flex-grow: 30; align-self: stretch; flex-basis: 0; justify-content:center; }
+
+
+  .products {flex-direction:row;flex-wrap: wrap;}
+    .product { background-color: rgba(100,20,0,0.3) ; width: 50%;  height: 250px;   margin-bottom: 10px;}
+
+.cart{ background-color: rgba(100,100,0,0.3) ; flex-basis: 0; flex-grow: 1;  overflow: scroll; }
+  .cart__content{   padding-top: 30px;}
+    .cart-item {  height: 150px;  margin-bottom: 20px;  background: rgba(0,255,0,0.3);  }
+.checkout {  height: 300px;  background: rgba(0,0,255,0.3); flex-basis: auto ;  flex-grow: 1; }
