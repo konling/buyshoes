@@ -1,24 +1,149 @@
 @import "normalize.css";
 
-body, html {  width: 100%;  height: 100%;}
-body, div, span, a, img, h1, h2, h3, h4, h5 {  box-sizing: border-box;  position: relative;  display: flex;  flex-direction: column;  align-items: stretch;  flex-shrink: 0;  align-content: flex-start;  border: 0 solid black;  margin: 0;  padding: 0;}
-* {  position: relative;}
-body {  background-color: #F7F8FA;  /*background-color: #FFFFFF;*/  color: #202020;  font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  font-weight: 100;}
-h1 {  font-size: 64px;  font-weight: 100;}
-h2 {  font-size: 48px;  font-weight: 100;}
-h3 {  font-size: 24px;  font-weight: 100;}
-p {  font-size: 16px;}
-a {  font-weight: 400;}
+body, html {
+    width: 100%;
+    height: 100%;
+}
 
-.site{width: 100%;  ;flex-direction: row; }
-.site__main{flex: 70 0; flex-direction: row; margin-right: 30%}
-.site__left-sidebar{flex: 0 auto; max-width: 170px; position: fixed; padding: 1%;}
-.site__content{flex: 1 0; background: green; margin-left: 170px;}
-.products{flex-wrap: wrap ;flex-direction: row;  background: blue; }
-.product{width: 50%;  height: 250px; margin-bottom: 10px; background: red;}
-.site__right-sidebar{    position: fixed; top: 0; right:0%; height: 100%; width: 30%;}
-.cart{ flex: 1 0; background: yellow; overflow: scroll;}
-.cart__title{}
-.cart__content{ }
-.cart-item{ height: 150px; margin-bottom: 20px;  background: rgba(0,255,0,0.3); }
-.checkout{   flex: 0 auto; height: 300px; background: rgba(0,0,255,0.3); }
+body, div, span, a, img, h1, h2, h3, h4, h5 {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    border: 0 solid black;
+
+    align-items: stretch;
+    flex-shrink: 0;
+    align-content: flex-start;
+}
+
+* {
+    position: relative;
+}
+
+body {
+    color: #202020;
+    background-color: #F7F8FA; /*background-color: #FFFFFF;*/
+
+    font-family: "Avenir Next", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 100;
+}
+
+p {
+    font-size: 16px;
+}
+
+a {
+    font-weight: 400;
+}
+
+.site {
+    flex-direction: row;
+
+    width: 100%;;
+}
+
+.site__main {
+    flex-direction: row;
+
+    margin-right: 30%;
+
+    background: #F7F8FA;
+
+    flex: 70 0;
+}
+
+.site__left-sidebar {
+    position: fixed;
+
+    max-width: 170px;
+    padding: 1%;
+
+    font-size: 48px;
+
+    flex: 0 auto;
+    text-color: #515151 100%;
+    font-face: AvenirNext-DemiBold;
+}
+
+.site__content {
+    margin-left: 170px;
+
+    background: green;
+
+    flex: 1 0;
+}
+
+.products {
+    flex-direction: row;
+
+    background: blue;
+
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 50%;
+    height: 250px;
+    margin-bottom: 10px;
+
+    background: red;
+}
+
+.site__right-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0%;
+
+    width: 30%;
+    height: 100%;
+}
+
+.cart {
+    overflow: scroll;
+
+    background: yellow;
+
+    flex: 1 0;
+}
+
+.cart__title {
+}
+
+.cart__content {
+}
+
+.cart-item {
+    height: 150px;
+    margin-bottom: 20px;
+
+    background: rgba(0, 255, 0, 0.3);
+}
+
+.checkout {
+    height: 300px;
+
+    background: rgba(0, 0, 255, 0.3);
+
+    flex: 0 auto;
+}
